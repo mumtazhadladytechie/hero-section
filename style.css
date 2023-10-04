@@ -1,0 +1,597 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    width: 100%; 
+    background-image: url(/images/circle.svg);
+    background-size: 70%;
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
+
+.container{
+    padding: 0 5rem;
+    height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.4rem;
+}
+
+.logo{
+    color: var(--Black, #2E2E2E);
+    font-size: 36px;
+    font-weight: 600;
+
+}
+span{
+    color: var(--Orange, #F77A40);
+    font-size: 36px;
+    font-weight: 600;
+
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+li{
+    list-style: none;
+
+}
+
+li a{
+    color: var(--Black, #2E2E2E);
+    font-size: 18px;
+    font-weight: 400;
+
+}
+.active{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 8px;
+    
+}
+
+button{
+    width: 120px;
+    height: 40px;
+    border: none;
+
+}
+
+.signup{
+    background-color: #fff;
+    color: var(--Black, #2E2E2E);
+    
+}
+
+.signup a{
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+
+.signin{
+    background-color: #F77A40;
+    border-radius: 8px;
+}
+.signin a{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+
+}
+
+.travel-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80vh;
+}
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+    margin-top: 45px;
+}
+
+.travel{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.travelp{
+    color: var(--Black, #2E2E2E);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    word-spacing: 10px;
+    width: 120%;
+
+}
+
+.travel-span{
+    color: var(--Orange, #F77A40);
+    font-size: 45px;
+    font-weight: 700;
+
+}
+
+.second-box{
+    color: var(--Black, #2E2E2E);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.destination-box{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    height: 180px;
+    filter: drop-shadow(0px 24px 50px rgba(0, 0, 0, 0.10));
+}
+.top{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 65%;
+    padding-left: 10px;
+    border-radius: 0px 40px 40px 40px;
+    background: var(--White, #FFF);
+}
+
+.top1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.top1-text{
+    color: #F77A40;
+    font-size: 18px;
+    font-weight: 500;
+}
+.top2{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: rgba(171, 171, 171, 0.15);
+    padding: 15px 20px;
+}
+.hotel{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top2-text{
+    color: #2E2E2E;
+    font-size: 18px;
+    font-weight: 500;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 115%;
+    background: var(--White, #FFF);
+    border-radius: 0px 40px 40px 40px;
+}
+
+.bottom1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+.bottom1-text{
+    color: var(--Gray, #ABABAB);
+    font-size: 18px;
+    font-weight: 400;
+
+}
+.bottom1div{
+    display: flex;
+    align-items: center;
+}
+
+.bottom1texts{
+    color: var(--Black, #2E2E2E);
+    font-size: 18px;
+    font-weight: 700;
+}
+.bottom1img{
+    margin-left: 15px;
+}
+
+.divdiv{
+    display: flex;
+    align-items: center;
+}
+
+.div{
+    height: 20%;
+    position: absolute;
+    border-left: 2px solid #ABABAB;
+    left: 40%;
+}
+
+
+.button{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 16px;
+    background: var(--Orange, #F77A40);
+    color: var(--White, #FFF);
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.right-container{
+    width: 60%;
+    height: 100%;
+    padding-bottom: 100px;
+}
+
+.travel-img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:1200px){
+    .container{
+        margin: 20px auto;
+    }
+    .left-container{
+        margin-top: 25px;
+    }
+    .bottom{
+        width: 130%;
+        gap: 32px;
+    }
+
+    .div{
+        left: 45%;
+    }
+}
+
+@media screen and (max-width:1176px){
+    .bottom{
+        gap: 55px;
+        height: 40%;
+    }
+    .bottom1div{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .divdiv{
+        display: flex; 
+        align-items: center;
+
+    }
+    .div{
+        left: 45%;
+    }
+}
+
+@media screen and (max-width:1120px){
+   .travelp{
+    font-size: 40px;
+    font-weight: 700;
+   }
+
+   .bottom{
+    width: 140%;
+   }
+   .div{
+    left: 48%;
+   }
+   .second-box{
+    font-size: 16px;
+    font-weight: 400;
+   }
+}
+
+@media screen and (max-width:1092px){
+    .travelp{
+        font-size: 38px;
+    }
+    .travel-span{
+        font-size: 38px;
+    }
+    .second-box{
+        font-size: 15px;
+    }
+    .bottom{
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .link{
+        display: none;
+    }
+    .travel-container{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+
+    }
+    .left-container{
+        width: 70%;
+        margin-top: 0px;
+    }
+    .travelp{
+        font-size: 55px;
+        margin-top: 30px;
+    }
+    .travel-span{
+        font-size: 55px;
+    }
+    .second-box{
+        font-size: 18px;
+    }
+    .travel-img{
+        position: absolute;
+        top: 70%;
+        left: 0%;
+    }
+    .destination-box{
+        margin-top: 90%;
+    }
+    .top{
+        width: 55%;
+    }
+    .bottom{
+        width: 110%;
+        gap: 80px;
+
+    }
+    .bottom1div{
+        display: flex;
+        flex-direction: row;
+    }
+    .div{
+        left: 37%;
+    }
+
+}
+@media screen and (max-width:944px){
+    .bottom{
+        width: 115%;
+    }
+}
+
+@media screen and (max-width:910px){
+    .bottom{
+        width: 125%;
+
+    }
+}
+
+@media screen and (max-width:895px){
+    .destination-box{
+        margin-top: 95%;
+    }
+    .bottom{
+        width: 120%;
+        gap: 40px;
+    }
+    .div{
+        left: 40%;
+    }
+}
+@media screen and (max-width:828px){
+    .travelp{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width:784px){
+    .travelp{
+        font-size: 35px;
+    }
+    .travel-span{
+        font-size: 35px;
+    }
+    .second-box{
+        font-size: 14px;
+    }
+    .bottom{
+        width: 130%;
+        gap: 50px;
+    }
+    .destination-box{
+        margin-top: 110%;
+    }
+    .travel-img{
+        top: 55%;
+        width: 90%;
+        height: 90%;
+    }
+    .bottom1-text{
+        font-size: 16px;
+    }
+    .bottom1texts{
+        font-size: 16px;
+    }
+    .button{
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:717px){
+    .destination-box{
+        margin-top: 120%;
+    }
+    .bottom{
+        width: 150%;
+        gap: 55px;
+    }
+    .div{
+        left: 50%;
+    }
+}
+
+@media screen and (max-width:653px){
+    .destination-box{
+        margin-top: 130%;
+    }
+    .logo{
+        font-size: 30px;
+    }
+    span{
+        font-size: 30px;
+    }
+    button{
+        width: 90px;
+        height: 30px;
+    }
+    .travelp{
+        font-size: 32px;
+    }
+    .travel-span{
+        font-size: 32px;
+    }
+    .second-box{
+        font-size: 13px;
+    }
+    .travel-img{
+        width: 80%;
+        height: 80%;
+    }
+    .top1-text{
+        font-size: 15px;
+    }
+    .top2-text{
+        font-size: 15px;
+    }
+    .bottom{
+        padding-left: 10px;
+        gap: 30px;
+    }
+    .bottom1img{
+        margin-left: 0;
+    }
+    .bottom1texts{
+        font-size: 13px;
+    }
+    .div{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:559px){
+    .logo{
+        font: 25px;
+    }
+    span{
+        font-size: 25px;
+    }
+    button{
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .travelp{
+        font-size: 25px;
+    }
+    .travel-span{
+        font-size: 25px;
+    }
+    .second-box{
+        font-size: 10px;
+    }
+    .travel-img{
+        top: 45%;
+        width: 70%;
+        height: 70%;
+    }
+    .destination-box{
+        margin-top: 125%;
+    }
+    .top2{
+        padding: 8px 10px;
+    }
+    .bottom{
+        width: 165%;
+    }
+    .bottom1-text{
+        font-size: 14px;
+    }
+    .bottom1texts{
+        font-size: 12px;
+    }
+    .bottom1img{
+        margin-left: 0px;
+    }
+    .button{
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:475px){
+    button{
+        width: 65px;
+        height: 25px;
+        font-size: 4px;
+        font-weight: 100;
+    }
+    .travelp{
+        font-size: 22px;
+    }
+    .travel-span{
+        font-size: 22px;
+    }
+    .travel-img{
+        top: 40%;
+    }
+    .destination-box{
+        margin-top: 132%;
+    }
+    .bottom{
+        width: 150%;
+    }
+    .bottom1-text{
+        font-size: 12px;
+    }
+    .bottom1texts{
+        font-size: 10px;
+    }
+    .button{
+        padding: 8px;
+        font-size: 8px;
+    }
+}
+@media screen and (max-width:400px){
+    button{
+        height: 20px;
+        width: 50px;
+        font-size: 4px;
+    }
+}
